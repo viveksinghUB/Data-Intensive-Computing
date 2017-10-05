@@ -1,0 +1,1348 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10200.17.0328.0755                               -->
+<workbook source-build='10.2.1 (10200.17.0328.0755)' source-platform='win' version='10.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Data by country+ (Worldbankdata)' inline='true' name='federated.0v9hvzg1itbwct12tglfh164yhwv' version='10.2'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Worldbankdata' name='excel-direct.148dga11qpglp10zz16d91gz8qt7'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Ashwini/Box Sync/Courses/Spring 2017/587 DIC/Term Project/TermProjectData/Worldbankdata.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Data by country].[Country Name]' />
+              <expression op='[Regions and subregions].[Country]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.148dga11qpglp10zz16d91gz8qt7' name='Data by country' table='[&apos;Data by country$&apos;]' type='table'>
+            <columns gridOrigin='A1:BE2355:no:A1:BE2355:0' header='yes' outcome='2'>
+              <column datatype='string' name='Country Name' ordinal='0' />
+              <column datatype='date' name='Date' ordinal='1' />
+              <column datatype='integer' name='Stock: Listed domestic companies (count)' ordinal='2' />
+              <column datatype='integer' name='Stock: Market cap companies (current US$)' ordinal='3' />
+              <column datatype='integer' name='Stock: Traded, total value (current US$)' ordinal='4' />
+              <column datatype='integer' name='Stock: Market cap of companies (% GDP)' ordinal='5' />
+              <column datatype='integer' name='Stock: Traded, total value (% GDP)' ordinal='6' />
+              <column datatype='integer' name='Stock: Traded, turnover ratio (%)' ordinal='7' />
+              <column datatype='integer' name='Banks: Comm branches (per 100k adults)' ordinal='8' />
+              <column datatype='integer' name='Banks: Automated tellers (per 100k adults)' ordinal='9' />
+              <column datatype='integer' name='Finance: Consumer price index (2005 = 100)' ordinal='10' />
+              <column datatype='integer' name='Finance: Deposit interest rate (%)' ordinal='11' />
+              <column datatype='integer' name='Finance: Lending interest rate (%)' ordinal='12' />
+              <column datatype='integer' name='Finance: Real interest rate (%)' ordinal='13' />
+              <column datatype='integer' name='Business: Start-up proc cost (% GNI per capita)' ordinal='14' />
+              <column datatype='integer' name='Business: Cost to export ($ per container)' ordinal='15' />
+              <column datatype='integer' name='Business: Cost to import ($ per container)' ordinal='16' />
+              <column datatype='integer' name='Business: Ease of biz index (1=easiest)' ordinal='17' />
+              <column datatype='integer' name='Business: Start-up procedures (count)' ordinal='18' />
+              <column datatype='integer' name='Business: Legal rights (0=weak, 10=strong)' ordinal='19' />
+              <column datatype='integer' name='Business: Time to start a business (days)' ordinal='20' />
+              <column datatype='integer' name='Business: Time to prep &amp; pay taxes (hours)' ordinal='21' />
+              <column datatype='integer' name='Business: Total tax rate (% of commercial profits)' ordinal='22' />
+              <column datatype='integer' name='Business: Firing cost (weeks of wages)' ordinal='23' />
+              <column datatype='integer' name='R&amp;D: Scientific &amp; tech articles' ordinal='24' />
+              <column datatype='integer' name='Transit: Air transport, passengers (count)' ordinal='25' />
+              <column datatype='integer' name='Transit: Railways, (million passenger-km)' ordinal='26' />
+              <column datatype='integer' name='Transit: Passenger cars (per 1,000 people)' ordinal='27' />
+              <column datatype='integer' name='Business: Mobile phone subscribers' ordinal='28' />
+              <column datatype='integer' name='Business: Internet users (per 100 people)' ordinal='29' />
+              <column datatype='integer' name='Military: Armed forces personnel' ordinal='30' />
+              <column datatype='real' name='Military: Expenditure (% GDP)' ordinal='31' />
+              <column datatype='real' name='Military: Expenditure (% central govt exp)' ordinal='32' />
+              <column datatype='integer' name='Business: Exports (% GDP)' ordinal='33' />
+              <column datatype='integer' name='Business: Imports (% GDP)' ordinal='34' />
+              <column datatype='integer' name='Business: Trade (% GDP)' ordinal='35' />
+              <column datatype='integer' name='Business: Exports (current US$)' ordinal='36' />
+              <column datatype='integer' name='Business: Imports (current US$)' ordinal='37' />
+              <column datatype='integer' name='Finance: GDP (current US$)' ordinal='38' />
+              <column datatype='integer' name='Finance: GDP per capita (current US$)' ordinal='39' />
+              <column datatype='integer' name='Finance: Net income from abroad (current LCU)' ordinal='40' />
+              <column datatype='integer' name='Government: Seats women in nat parliament (%)' ordinal='41' />
+              <column datatype='integer' name='Health: Mortality, under-5 (per 1,000 live births)' ordinal='42' />
+              <column datatype='integer' name='Health: Health expenditure per capita (current US$)' ordinal='43' />
+              <column datatype='integer' name='Health: Health expenditure, total (% GDP)' ordinal='44' />
+              <column datatype='integer' name='Population: Total (count)' ordinal='45' />
+              <column datatype='integer' name='Population: Urban (count)' ordinal='46' />
+              <column datatype='integer' name='Population:: Birth rate, crude (per 1,000)' ordinal='47' />
+              <column datatype='integer' name='Health: Life expectancy at birth, female (years)' ordinal='48' />
+              <column datatype='integer' name='Health: Life expectancy at birth, male (years)' ordinal='49' />
+              <column datatype='integer' name='Health: Life expectancy at birth, total (years)' ordinal='50' />
+              <column datatype='integer' name='Population: Ages 0-14 (% of total)' ordinal='51' />
+              <column datatype='integer' name='Population: Ages 15-64 (% of total)' ordinal='52' />
+              <column datatype='integer' name='Population: Ages 65+ (% of total)' ordinal='53' />
+              <column datatype='integer' name='Business: International tourism inc (current US$)' ordinal='54' />
+              <column datatype='integer' name='Business: International tourism, exp (current US$)' ordinal='55' />
+              <column datatype='integer' name='Measures with values' ordinal='56' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.148dga11qpglp10zz16d91gz8qt7' name='Regions and subregions' table='[&apos;Regions and subregions$&apos;]' type='table'>
+            <columns gridOrigin='A1:C235:no:A1:C235:0' header='yes' outcome='6'>
+              <column datatype='string' name='Region' ordinal='0' />
+              <column datatype='string' name='Subregion' ordinal='1' />
+              <column datatype='string' name='Country' ordinal='2' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Country Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country Name]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Country Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock: Listed domestic companies (count)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stock: Listed domestic companies (count)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Stock: Listed domestic companies (count)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock: Market cap companies (current US$)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stock: Market cap companies (current US$)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Stock: Market cap companies (current US$)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock: Traded, total value (current US$)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stock: Traded, total value (current US$)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Stock: Traded, total value (current US$)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock: Market cap of companies (% GDP)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stock: Market cap of companies (% GDP)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Stock: Market cap of companies (% GDP)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock: Traded, total value (% GDP)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stock: Traded, total value (% GDP)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Stock: Traded, total value (% GDP)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock: Traded, turnover ratio (%)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stock: Traded, turnover ratio (%)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Stock: Traded, turnover ratio (%)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Banks: Comm branches (per 100k adults)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Banks: Comm branches (per 100k adults)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Banks: Comm branches (per 100k adults)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Banks: Automated tellers (per 100k adults)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Banks: Automated tellers (per 100k adults)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Banks: Automated tellers (per 100k adults)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finance: Consumer price index (2005 = 100)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finance: Consumer price index (2005 = 100)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Finance: Consumer price index (2005 = 100)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finance: Deposit interest rate (%)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finance: Deposit interest rate (%)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Finance: Deposit interest rate (%)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finance: Lending interest rate (%)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finance: Lending interest rate (%)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Finance: Lending interest rate (%)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finance: Real interest rate (%)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finance: Real interest rate (%)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Finance: Real interest rate (%)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Start-up proc cost (% GNI per capita)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Start-up proc cost (% GNI per capita)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Start-up proc cost (% GNI per capita)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Cost to export ($ per container)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Cost to export ($ per container)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Cost to export ($ per container)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Cost to import ($ per container)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Cost to import ($ per container)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Cost to import ($ per container)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Ease of biz index (1=easiest)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Ease of biz index (1=easiest)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Ease of biz index (1=easiest)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Start-up procedures (count)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Start-up procedures (count)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Start-up procedures (count)</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Legal rights (0=weak, 10=strong)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Legal rights (0=weak, 10=strong)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Legal rights (0=weak, 10=strong)</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Time to start a business (days)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Time to start a business (days)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Time to start a business (days)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Time to prep &amp; pay taxes (hours)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Time to prep &amp; pay taxes (hours)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Time to prep &amp; pay taxes (hours)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Total tax rate (% of commercial profits)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Total tax rate (% of commercial profits)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Total tax rate (% of commercial profits)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Firing cost (weeks of wages)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Firing cost (weeks of wages)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Firing cost (weeks of wages)</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R&amp;D: Scientific &amp; tech articles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R&amp;D: Scientific &amp; tech articles]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>R&amp;D: Scientific &amp; tech articles</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transit: Air transport, passengers (count)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Transit: Air transport, passengers (count)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Transit: Air transport, passengers (count)</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transit: Railways, (million passenger-km)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Transit: Railways, (million passenger-km)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Transit: Railways, (million passenger-km)</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transit: Passenger cars (per 1,000 people)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Transit: Passenger cars (per 1,000 people)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Transit: Passenger cars (per 1,000 people)</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Mobile phone subscribers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Mobile phone subscribers]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Mobile phone subscribers</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Internet users (per 100 people)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Internet users (per 100 people)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Internet users (per 100 people)</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Military: Armed forces personnel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Military: Armed forces personnel]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Military: Armed forces personnel</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Military: Expenditure (% GDP)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Military: Expenditure (% GDP)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Military: Expenditure (% GDP)</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Military: Expenditure (% central govt exp)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Military: Expenditure (% central govt exp)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Military: Expenditure (% central govt exp)</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Exports (% GDP)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Exports (% GDP)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Exports (% GDP)</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Imports (% GDP)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Imports (% GDP)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Imports (% GDP)</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Trade (% GDP)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Trade (% GDP)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Trade (% GDP)</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Exports (current US$)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Exports (current US$)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Exports (current US$)</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: Imports (current US$)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: Imports (current US$)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: Imports (current US$)</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finance: GDP (current US$)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finance: GDP (current US$)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Finance: GDP (current US$)</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finance: GDP per capita (current US$)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finance: GDP per capita (current US$)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Finance: GDP per capita (current US$)</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finance: Net income from abroad (current LCU)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finance: Net income from abroad (current LCU)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Finance: Net income from abroad (current LCU)</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Government: Seats women in nat parliament (%)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Government: Seats women in nat parliament (%)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Government: Seats women in nat parliament (%)</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health: Mortality, under-5 (per 1,000 live births)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Health: Mortality, under-5 (per 1,000 live births)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Health: Mortality, under-5 (per 1,000 live births)</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health: Health expenditure per capita (current US$)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Health: Health expenditure per capita (current US$)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Health: Health expenditure per capita (current US$)</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health: Health expenditure, total (% GDP)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Health: Health expenditure, total (% GDP)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Health: Health expenditure, total (% GDP)</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population: Total (count)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population: Total (count)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Population: Total (count)</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population: Urban (count)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population: Urban (count)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Population: Urban (count)</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population:: Birth rate, crude (per 1,000)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population:: Birth rate, crude (per 1,000)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Population:: Birth rate, crude (per 1,000)</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health: Life expectancy at birth, female (years)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Health: Life expectancy at birth, female (years)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Health: Life expectancy at birth, female (years)</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health: Life expectancy at birth, male (years)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Health: Life expectancy at birth, male (years)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Health: Life expectancy at birth, male (years)</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health: Life expectancy at birth, total (years)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Health: Life expectancy at birth, total (years)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Health: Life expectancy at birth, total (years)</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population: Ages 0-14 (% of total)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population: Ages 0-14 (% of total)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Population: Ages 0-14 (% of total)</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population: Ages 15-64 (% of total)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population: Ages 15-64 (% of total)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Population: Ages 15-64 (% of total)</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population: Ages 65+ (% of total)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population: Ages 65+ (% of total)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Population: Ages 65+ (% of total)</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: International tourism inc (current US$)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: International tourism inc (current US$)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: International tourism inc (current US$)</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business: International tourism, exp (current US$)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business: International tourism, exp (current US$)]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Business: International tourism, exp (current US$)</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Measures with values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Measures with values]</local-name>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias>Measures with values</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Data by country]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:BE2355:no:A1:BE2355:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Regions and subregions]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subregion</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Subregion]</local-name>
+            <parent-name>[Regions and subregions]</parent-name>
+            <remote-alias>Subregion</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Regions and subregions]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Regions and subregions]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C235:no:A1:C235:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.285714' measure-ordering='alphabetic' measure-percentage='0.714286' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data by country+ (Worldbankdata)' name='federated.0v9hvzg1itbwct12tglfh164yhwv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v9hvzg1itbwct12tglfh164yhwv'>
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Finance: GDP per capita (current US$)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Finance: GDP per capita (current US$)]' derivation='Sum' name='[sum:Finance: GDP per capita (current US$):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0v9hvzg1itbwct12tglfh164yhwv].[yr:Date:ok]'>
+            <groupfilter function='member' level='[yr:Date:ok]' member='2010' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0v9hvzg1itbwct12tglfh164yhwv].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0v9hvzg1itbwct12tglfh164yhwv].[sum:Finance: GDP per capita (current US$):qk]' field-type='quantitative' major-origin='0' major-spacing='10000' scope='cols' type='space' />
+            <format attr='subtitle' class='0' field='[federated.0v9hvzg1itbwct12tglfh164yhwv].[sum:Finance: GDP per capita (current US$):qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.0v9hvzg1itbwct12tglfh164yhwv].[sum:Finance: GDP per capita (current US$):qk]' scope='cols' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v9hvzg1itbwct12tglfh164yhwv].[none:Region:nk]' />
+              <text column='[federated.0v9hvzg1itbwct12tglfh164yhwv].[sum:Finance: GDP per capita (current US$):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0v9hvzg1itbwct12tglfh164yhwv].[none:Country Name:nk]</rows>
+        <cols>[federated.0v9hvzg1itbwct12tglfh164yhwv].[sum:Finance: GDP per capita (current US$):qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.0v9hvzg1itbwct12tglfh164yhwv].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v9hvzg1itbwct12tglfh164yhwv].[none:Region:nk]</field>
+            <field>[federated.0v9hvzg1itbwct12tglfh164yhwv].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

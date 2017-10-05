@@ -1,0 +1,8 @@
+hdfs dfs -mkdir -p ~/ViveksininputActivity2_2gram/
+hdfs dfs -put lucan.bellum_civile.part.1.tess ~/ViveksininputActivity2_2gram/
+hdfs dfs -put vergil.aeneid.tess ~/ViveksininputActivity2_2gram/
+hadoop com.sun.tools.javac.Main *.java
+jar cf Act2Pairs.jar *
+hadoop jar Act2Pairs.jar Act2Pairs ~/ViveksininputActivity2_2gram/ ~/Act2Pairs4
+hdfs dfs -get ~/Act2Pairs4
+

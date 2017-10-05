@@ -1,0 +1,7 @@
+hdfs dfs -mkdir -p ~/ViveksininputTask1/
+hdfs dfs -put tweettext.txt ~/ViveksininputTask1/
+hadoop com.sun.tools.javac.Main *.java
+jar cf TwitterCount.jar *.class
+hadoop jar TwitterCount.jar TwitterCount ~/ViveksininputTask1/ ~/TwitterCountoutputviveksin1
+hdfs dfs -get ~/TwitterCountoutputviveksin1
+

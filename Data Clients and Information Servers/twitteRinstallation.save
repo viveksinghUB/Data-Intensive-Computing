@@ -1,0 +1,13 @@
+https://cran.r-project.org/mirrors.htmlhttps://cran.r-project.org/mirrors.htmlhttps://cran.r-project.org/mirrors.htmlhttps://cran.r-project.org/mirrors.html
+this is the CRAN mirrors location
+open up and chose any mirror
+run the following command
+1) chooseCRANmirror("http://archive.linux.duke.edu/cran/")
+then chose a mirror ..closest is best
+2)install.packages("twitteR",dependencies=TRUE)
+if an error occurs regarding Makevars, then CPP is not installed :
+3)install.packages("rcpp",dependencies=TRUE) 
+4)if error again then 
+sudo apt-get update && sudo apt-get install gfortran -y
+
+

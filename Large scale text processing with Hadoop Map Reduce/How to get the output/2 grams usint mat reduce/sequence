@@ -1,0 +1,8 @@
+hdfs dfs -mkdir -p ~/ViveksinInputActivity1/
+hdfs dfs -put lucan.bellum_civile.part.1.tess ~/ViveksinInputActivity1/
+hdfs dfs -put vergil.aeneid.tess ~/ViveksinInputActivity1/
+hadoop com.sun.tools.javac.Main *.java
+jar cf lemmaemit.jar *
+hadoop jar lemmaemit.jar LemmaCount ~/ViveksinInputActivity1/ ~/Viveksinoutput1
+hdfs dfs -get ~/Viveksinoutput1
+

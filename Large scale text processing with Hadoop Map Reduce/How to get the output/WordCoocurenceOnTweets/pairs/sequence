@@ -1,0 +1,7 @@
+hdfs dfs -mkdir -p ~/ViveksininputTask2/
+hdfs dfs -put tweettext.txt ~/ViveksininputTask2/
+hadoop com.sun.tools.javac.Main *.java
+jar cf Pairs.jar *.class
+hadoop jar Pairs.jar Pairs ~/ViveksininputTask2/ ~/Pairsoutputviveksin1
+hdfs dfs -get ~/Pairsoutputviveksin1
+
